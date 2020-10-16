@@ -16,8 +16,4 @@ Documentation
 This library provides three CSG operations: union, subtract, and intersect.
 See the sample Projct for more information.
 
-Contribution
-============
 
-Every kind of contribution is welcome. Feel free to open a pull request.
-Special thanks to [Lars Brubaker](https://github.com/larsbrubaker)  for the performance improvements.
