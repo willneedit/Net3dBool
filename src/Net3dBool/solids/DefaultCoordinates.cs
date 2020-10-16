@@ -1,6 +1,4 @@
 ﻿
-
-using OpenToolkit.Mathematics;
 /** 
 * Sample Objects
 * 
@@ -14,6 +12,8 @@ using OpenToolkit.Mathematics;
 * Ported from Java to C# by Sebastian Loncar, Web: http://loncar.de
 * Project: https://github.com/Arakis/Net3dBool
 */
+
+
 namespace Net3dBool
 {
     public class DefaultCoordinates

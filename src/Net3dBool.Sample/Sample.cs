@@ -1,10 +1,5 @@
 ﻿using System;
 using System.Drawing;
-using OpenToolkit;
-using OpenToolkit.Graphics;
-using OpenToolkit.Graphics.OpenGL;
-using OpenToolkit.Input;
-using OpenToolkit.Mathematics;
 
 namespace Net3dBool.Sample
 {

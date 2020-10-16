@@ -36,7 +36,6 @@ Project: https://github.com/MatterHackers/agg-sharp (an included library)
 */
 
 using System.Collections.Generic;
-using OpenToolkit.Mathematics;
 
 namespace Net3dBool
 {
