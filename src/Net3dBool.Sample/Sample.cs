@@ -1,4 +1,6 @@
-﻿using System;
+﻿using OpenToolkit.Graphics.OpenGL;
+using OpenToolkit.Mathematics;
+using System;
 using System.Drawing;
 
 namespace Net3dBool.Sample
@@ -53,23 +55,23 @@ namespace Net3dBool.Sample
         {
             GL.Begin(PrimitiveType.Triangles);
 
-            var verts = Mesh.GetVertices();
+            Vector3d[] verts = Mesh.GetVertices();
             int[] ind = Mesh.GetIndices();
 
             for (var i = 0; i < ind.Length; i = i + 3)
             {
                 GL.Normal3(new Vector3(1, 1, 1));
-                var p = verts[ind[i]];
+                Vector3d p = verts[ind[i]];
                 GL.Color3(Color.Red);
-                GL.Vertex3(new Vector3d(p.X, p.Y, p.Z));
+                GL.Vertex3(p.X, p.Y, p.Z);
 
                 p = verts[ind[i + 1]];
                 GL.Color3(Color.Blue);
-                GL.Vertex3(new Vector3d(p.X, p.Y, p.Z));
+                GL.Vertex3(p.X, p.Y, p.Z);
 
                 p = verts[ind[i + 2]];
                 GL.Color3(Color.Green);
-                GL.Vertex3(new Vector3d(p.X, p.Y, p.Z));
+                GL.Vertex3(p.X, p.Y, p.Z);
             }
 
             GL.End();
